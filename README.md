@@ -113,20 +113,24 @@ require 'ruble'
   注：如果1.9版本之前的用户修改过HTML代码块，请点右键打开本文档所在目录，找之前的snippets.rb.bak文件，把修改过的内容放置进来。 
 =end
 
-with_defaults :scope => "source.css support.type.property-name.css" do    #======扩展CSS属性代码块===================================
+with_defaults :scope => "source.css support.type.property-name.css" do    #======扩展CSS属性代码块
 
-  snippet "-webkit-" do |s|             #引号内为显示名称，代码助手提示列表显示时可见
-    s.trigger = "-wk"                   #-wk是激活字符，即按下后会触发该代码块
-    s.expansion = '-webkit-$0'          #expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
-                                        #如果输出涉及到换行和tab，也需严格在这里使用换行和tab。
-                                        #输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
-    s.needApplyReContentAssist = true   #这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出图片列表                                                                         
+  snippet "-webkit-" do |s|             
+    s.trigger = "-wk"                   
+    s.expansion = '-webkit-$0'                                        
+    s.needApplyReContentAssist = true                                                                       
   end
-  
+
+  #引号内为显示名称，代码助手提示列表显示时可见
+  #-wk是激活字符，即按下后会触发该代码块
+  #expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
+  #输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
+  #如果输出涉及到换行和tab，也需严格在这里使用换行和tab。
+  #(s.needApplyReContentAssist = true )这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出图片列表     
 end
 
 
-with_defaults :scope => "source.css entity.name.tag.css" do   #======扩展CSS选择器代码块===================================
+with_defaults :scope => "source.css entity.name.tag.css" do   #======扩展CSS选择器代码块
 	
 	snippet "@media min-max width" do |s|
     s.trigger = "@mediam"
@@ -154,16 +158,22 @@ require 'ruble'
   注：如果1.9版本之前的用户修改过代码块，请点右键打开本文档所在目录，找之前的snippets.rb.bak文件，把修改过的内容放置进来。 
 =end
 
-with_defaults :scope => "source.js" do #=====扩展定义JS代码块========================
+with_defaults :scope => "source.js" do #=====扩展定义JS代码块
+
 如下是一个示例代码块，可以复制后再添加新代码块
 
-  snippet 'document.createElement()' do |s|            #document.createElement()是显示名称，代码助手提示列表显示时可见   
-    s.trigger = "dc"                                   #dc是激活字符，即按下dc后会触发该代码块 
-    s.expansion = "document.createElement(\"$1\")$0"   #expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。                        
-                                                       #如果输出涉及到换行和tab，也需严格在这里使用换行和tab。                                                         
-                                                       #输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义                                                                
-    s.needApplyReContentAssist = true                  #这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出标签列表
+  snippet 'document.createElement()' do |s|            
+    s.trigger = "dc"                                   
+    s.expansion = "document.createElement(\"$1\")$0"                                                                                                                                       
+    s.needApplyReContentAssist = true                  
   end
+
+  #document.createElement()是显示名称，代码助手提示列表显示时可见   
+  #dc是激活字符，即按下dc后会触发该代码块 
+  #expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。 
+  #如果输出涉及到换行和tab，也需严格在这里使用换行和tab。    
+  #输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义  
+  #这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出标签列表 
 	
   复制上述代码块，删除备注，在下面即可开始自定义
     
