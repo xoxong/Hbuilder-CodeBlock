@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Hbuilder-CodeBlock
 #Most code snippets are likely to be used, and we should be independent
 We can use the extension code blocks of the Hbuilder to store common code blocks
@@ -116,8 +117,13 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块============
   s.expansion = "return false;"
   end
 =======
+=======
+>>>>>>> fafc62731a228ee08d61dfbd13a4ee6a084bd110
 #Hbuilder码块
 
 Most code snippets are likely to be used, and we should be independent
 We can use the extension code blocks of the Hbuilder to store common code blocks
+<<<<<<< HEAD
+>>>>>>> fafc62731a228ee08d61dfbd13a4ee6a084bd110
+=======
 >>>>>>> fafc62731a228ee08d61dfbd13a4ee6a084bd110
