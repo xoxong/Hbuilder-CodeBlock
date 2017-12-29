@@ -1,0 +1,67 @@
+!!com.aptana.scripting.model.BundleElement
+author: ''
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [-wk]
+  description: null
+  displayName: -webkit-
+  expansion: -webkit-$0
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: true
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\css_snippets.rb
+  runType: current_thread
+  scope: source.css support.type.property-name.css
+  tags: &id001 []
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['@mediam']
+  description: null
+  displayName: '@media min-max width'
+  expansion: "@media only screen and (min-width: ${1:100}px) and (max-width: ${2:640}px)\
+    \ {\n\t$0\n}"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: CSS_OUTRULE
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\css_snippets.rb
+  runType: current_thread
+  scope: source.css entity.name.tag.css
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+copyright: ''
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: CSS bundle for RadRails
+displayName: bundle_name
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: ''
+visible: true

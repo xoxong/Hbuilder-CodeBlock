@@ -1,0 +1,173 @@
+!!com.aptana.scripting.model.BundleElement
+author: ''
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$.each]
+  description: null
+  displayName: $.each
+  expansion: "\\$.each(${1:array/object}, function($2) {\n\t$0\n});"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: &id001 []
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$.extend]
+  description: null
+  displayName: $.extend
+  expansion: \$.extend(${1:true, }${2:target object}, ${3:object1});
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$.map]
+  description: null
+  displayName: $.map
+  expansion: "\\$.map(${1:array}, function($2) {\n\t$0\n});"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [plugin]
+  description: null
+  displayName: plugin_animation
+  expansion: "jQuery.fn.${1:myeffect} = function(speed, easing, callback) {\n\treturn\
+    \ this.animate({${2:param1}: ${3:'value'}}, speed, easing, callback);\n};"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [plugin]
+  description: null
+  displayName: plugin_selector
+  expansion: "(function(\\$) {\n\t\\$.extend(\\$.expr[':'], {\n\t\t${1:selectorName}:\
+    \ function(element, index, matches, set) {\n\t\t\t$0\n\t\t\treturn something;\n\
+    \t\t}\n\t});\n})(jQuery);\n"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [plugin]
+  description: null
+  displayName: plugin_method
+  expansion: ";(function(\\$) {\n${2:// ${3:What does the $1 plugin do?}}\n\\$.fn.${1:pluginName}\
+    \ = function(options) {\n\tvar opts = \\$.extend({}, \\$.fn.$1.defaults, options);\n\
+    \n\treturn this.each(function() {\n\t\tvar \\$this = \\$(this);\n\n\t${5:  ${6://\
+    \ Support for the Metadata Plugin.}\n\t\tvar o = \\$.meta ? \\$.extend({\\}, opts,\
+    \ \\$this.data()) : opts;\n\t}\n\n\t});\n\n\t// private function for debugging\n\
+    \tfunction debug(\\$obj) {\n\t\tif (window.console && window.console.log) {\n\t\
+    \t\twindow.console.log(\\$obj);\n\t\t}\n\t}\n};\n\n// default options\n\\$.fn.$1.defaults\
+    \ = {\n\t${4:defaultOne:true,\n\tdefaultTwo:false,\n\tdefaultThree:'yay!'}\n};\n\
+    \n})(jQuery);\n"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: {contact_email_rot_13: ''}
+decreaseIndentMarkers: &id002 {}
+description: Support for the <a href="http://jquery.com/">jQuery JavaScript library</a>.
+displayName: bundle_name
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: ''
+visible: true

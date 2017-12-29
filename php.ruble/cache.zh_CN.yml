@@ -1,0 +1,42 @@
+!!com.aptana.scripting.model.BundleElement
+author: ''
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [globals]
+  description: null
+  displayName: $GLOBALS['...']
+  expansion: '\$GLOBALS[''${1:variable}'']${2: = }${3:something}${4:;}$0'
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\php_snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: &id002 []
+  version: null
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: {contact_email_rot_13: ''}
+decreaseIndentMarkers: &id001 {}
+description: <a href="http://www.php.net/">PHP</a> is a widely-used general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+displayName: bundle_name
+fileTypeRegistry: *id001
+fileTypes: *id002
+foldingStartMarkers: *id001
+foldingStopMarkers: *id001
+increaseIndentMarkers: *id001
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: ''
+visible: true

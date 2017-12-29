@@ -1,0 +1,138 @@
+!!com.aptana.scripting.model.BundleElement
+author: ''
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [dc]
+  description: null
+  displayName: document.createElement()
+  expansion: document.createElement("$1")$0
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: true
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: &id001 []
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [rtrue]
+  description: null
+  displayName: return true;
+  expansion: return true;
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [rfalse]
+  description: null
+  displayName: return false;
+  expansion: return false;
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [notes_code, ncode]
+  description: null
+  displayName: notes_code不带参代码块介绍;
+  expansion: //codeBlockDescribe:$0
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [notes_code_data, ncodedata]
+  description: null
+  displayName: notes_code_带参代码块介绍;
+  expansion: "/**   \n    codeBlockDescribe:$1\n    data:$2  \n**/"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+copyright: ''
+customProperties: null
+decreaseIndentMarkers: {}
+description: Javascript bundle for RadRails, ported from the TextMate bundle
+displayName: bundle_name
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: ''
+visible: true
