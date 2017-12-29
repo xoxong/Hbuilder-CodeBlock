@@ -19,20 +19,22 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
 =end
 
   with_defaults :scope => 'text.html text' do |bundle|  
+
+
 ###HTML标签代码块
 
 ####如下是一个示例代码块，可以复制后再添加新代码块
 
   snippet 'div_class' do |cmd|  #div_class是显示名称，代码助手提示列表显示时可见
   
-    cmd.trigger = 'divc'        #divc是激活字符，即按下divc后会触发该代码块
-    
+    cmd.trigger = 'divc'
+    > divc是激活字符，即按下divc后会触发该代码块        
     cmd.expansion = "<div class=\"$1\">$0</div>" 
-    #1.expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
-    #2.如果输出涉及到换行和tab，也需严格在这里使用换行和tab。
-	#3.输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
+    > 1.expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
+    > 2.如果输出涉及到换行和tab，也需严格在这里使用换行和tab。
+	> 3.输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
     cmd.needApplyReContentAssist = true  
-    #4.这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出样式列表
+    > 4.这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出样式列表
     end 
   #div_class代码块结束
  
@@ -40,7 +42,9 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
     cmd.trigger = 'ngp'
     cmd.expansion = "<ng-pluralize>$1</ng-pluralize>"
     end
-       with_defaults :scope => 'text.html entity.other.attribute-name.html' do |bundle|  
+       
+
+with_defaults :scope => 'text.html entity.other.attribute-name.html' do |bundle|  
 
 ###HTML属性代码块
 
@@ -56,12 +60,14 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
 	 + 输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
     s.locationType='HTML_ATTRIBUTE'
 
-end #ng代码块结束
+end 
+> ng代码块结束
 
 end
 
 
-with_defaults :scope => 'text.html - source', :input => :none, :output => :insert_as_snippet do |bundle|  #=====无显示名称的快捷命令
+with_defaults :scope => 'text.html - source', :input => :none, :output => :insert_as_snippet do |bundle|  
+#=====无显示名称的快捷命令
 =begin
 
 如下示例均为系统已经预置的命令，无需重复制作
