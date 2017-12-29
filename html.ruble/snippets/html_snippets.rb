@@ -97,8 +97,6 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
 <meta name="format-detection" content="telephone=no,email=no,adress=no">'
       cmd.needApplyReContentAssist = true
   end
-  
-
 end
 
 

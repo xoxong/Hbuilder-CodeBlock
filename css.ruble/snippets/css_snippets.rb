@@ -34,4 +34,52 @@ with_defaults :scope => "source.css entity.name.tag.css" do   #======扩展CSS�
 }'
   end
   
+  #手机rem扩展自适应代码块=================
+  #手机rem扩展自适应代码块=================
+  #手机rem扩展自适应代码块=================
+  
+  #手机750rem
+  snippet "code_iphone_rem750px 手机rem扩展自适应代码块750" do |s|
+    s.trigger = "code_iphone_rem750px",'cirem750'
+    s.locationType="CSS_OUTRULE"
+    s.expansion =
+'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}
+ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:42.66667px !important}}@media all and (min-width: 360px){html{font-size:48px !important}}
+@media all and (min-width: 375px){html{font-size:50px !important}}@media all and (min-width: 384px){html{font-size:51.2px !important}}
+@media all and (min-width: 412px){html{font-size:54.93333px !important}}@media all and (min-width: 414px){html{font-size:55.2px !important}}
+@media all and (min-width: 480px){html{font-size:64px !important}}@media all and (min-width: 550px){html{font-size:73.33333px !important}}
+@media all and (min-width: 600px){html{font-size:80px !important}}@media all and (min-width: 640px){html{font-size:85.33333px !important}}
+@media all and (min-width: 700px){html{font-size:93.33333px !important}}@media all and (min-width: 765px){html{font-size:102px !important}}
+@media all and (min-width: 768px){html{font-size:102.4px !important}}@media all and (min-width: 800px){html{font-size:106.66667px !important}}
+@media all and (min-width: 850px){html{font-size:113.33333px !important}}@media all and (min-width: 917px){html{font-size:122.26667px !important}}
+@media all and (min-width: 1024px){html{font-size:136.53333px !important}}@media all and (min-width: 1080px){html{font-size:144px !important}}
+@media all and (min-width: 1152px){html{font-size:153.6px !important}}@media all and (min-width: 1280px){html{font-size:170.66667px !important}}
+@media all and (min-width: 1360px){html{font-size:181.33333px !important}}@media all and (min-width: 1366px){html{font-size:182.13333px !important}}
+@media all and (min-width: 1440px){html{font-size:192px !important}}@media all and (min-width: 1550px){html{font-size:206.66667px !important}}
+@media all and (min-width: 1600px){html{font-size:213.33333px !important}}@media all and (min-width: 1680px){html{font-size:224px !important}}
+@media all and (min-width: 1901px){html{font-size:253.46667px !important}}@media all and (min-width: 1920px){html{font-size:256px !important}}}'
+  end
+  
+  #手机640rem
+  snippet "code_iphone_rem640px 手机rem扩展自适应代码块640" do |s|
+    s.trigger = "code_iphone_rem640px",'cirem640'
+    s.locationType="CSS_OUTRULE"
+    s.expansion =
+'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:50px !important}}
+@media all and (min-width: 360px){html{font-size:56.25px !important}}@media all and (min-width: 375px){html{font-size:58.59375px !important}}
+@media all and (min-width: 384px){html{font-size:60px !important}}@media all and (min-width: 412px){html{font-size:64.375px !important}}
+@media all and (min-width: 414px){html{font-size:64.6875px !important}}@media all and (min-width: 480px){html{font-size:75px !important}}
+@media all and (min-width: 550px){html{font-size:85.9375px !important}}@media all and (min-width: 600px){html{font-size:93.75px !important}}
+@media all and (min-width: 640px){html{font-size:100px !important}}@media all and (min-width: 700px){html{font-size:109.375px !important}}
+@media all and (min-width: 765px){html{font-size:119.53125px !important}}@media all and (min-width: 768px){html{font-size:120px !important}}
+@media all and (min-width: 800px){html{font-size:125px !important}}@media all and (min-width: 850px){html{font-size:132.8125px !important}}
+@media all and (min-width: 917px){html{font-size:143.28125px !important}}@media all and (min-width: 1024px){html{font-size:160px !important}}
+@media all and (min-width: 1080px){html{font-size:168.75px !important}}@media all and (min-width: 1152px){html{font-size:180px !important}}
+@media all and (min-width: 1280px){html{font-size:200px !important}}@media all and (min-width: 1360px){html{font-size:212.5px !important}}
+@media all and (min-width: 1366px){html{font-size:213.4375px !important}}@media all and (min-width: 1440px){html{font-size:225px !important}}
+@media all and (min-width: 1550px){html{font-size:242.1875px !important}}@media all and (min-width: 1600px){html{font-size:250px !important}}
+@media all and (min-width: 1680px){html{font-size:262.5px !important}}@media all and (min-width: 1901px){html{font-size:297.03125px !important}}
+@media all and (min-width: 1920px){html{font-size:300px !important}}'
+  end
+  
 end
