@@ -1,11 +1,11 @@
 
 # Hbuilder-CodeBlock
-####Most code snippets are likely to be used, and we should be independent
+#### Most code snippets are likely to be used, and we should be independent
 We can use the extension code blocks of the Hbuilder to store common code blocks
 
 打开步骤：打开Hbuilder>工具>扩展代码块
 
-###html.ruble
+### html.ruble
 
 require 'ruble'=begin
 HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极客的神奇玩具。
@@ -23,14 +23,14 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
   with_defaults :scope => 'text.html text' do |bundle|  
 
 
-###HTML标签代码块 
+### HTML标签代码块 
 
-####如下是一个示例代码块，可以复制后再添加新代码块
+#### 如下是一个示例代码块，可以复制后再添加新代码块
 
   snippet 'div_class' do |cmd|  #div_class是显示名称，代码助手提示列表显示时可见
   
     cmd.trigger = 'divc'
-    > divc是激活字符，即按下divc后会触发该代码块        
+    > divc是激活字符，即按下divc后会触发该代码块         
     cmd.expansion = "<div class=\"$1\">$0</div>" 
     > 1.expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
     > 2.如果输出涉及到换行和tab，也需严格在这里使用换行和tab。
@@ -50,9 +50,9 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
 
 with_defaults :scope => 'text.html entity.other.attribute-name.html' do |bundle|  
 
-###HTML属性代码块
+### HTML属性代码块
 
-####如下是一个示例代码块，可以复制后再添加新代码块
+#### 如下是一个示例代码块，可以复制后再添加新代码块
 
 	snippet 'ng-' do |s|  > ng-是显示名称，代码助手提示列表显示时可见
 	s.trigger = 'ng-'		 > ng-是激活字符，即按下ng-后会触发该代码块
@@ -101,13 +101,13 @@ with_defaults :scope => 'text.html - source', :input => :none, :output => :inser
 
 =end
 
-####可复制一段命令，在下面开始制作新命令
+#### 可复制一段命令，在下面开始制作新命令
   
 end
 
 
 
-###css.ruble
+### css.ruble
 
 require 'ruble'=begin 
 
@@ -123,7 +123,7 @@ require 'ruble'=begin
 =end
 
 with_defaults :scope => "source.css support.type.property-name.css" do    
-#======扩展CSS属性代码块
+======扩展CSS属性代码块
 
 	snippet "-webkit-" do |s|             
     s.trigger = "-wk"                   
@@ -151,7 +151,7 @@ with_defaults :scope => "source.css entity.name.tag.css" do   #======扩展CSS�
 end
 
 
-###js.ruble
+### js.ruble
 require 'ruble'
 =begin 
 
@@ -198,7 +198,7 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块
 =======
 =======
 
-#Hbuilder码块
+# Hbuilder码块
 
 Most code snippets are likely to be used, and we should be independent
 We can use the extension code blocks of the Hbuilder to store common code blocks
