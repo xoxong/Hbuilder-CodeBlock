@@ -23,7 +23,7 @@ HBuilder可使用ruby脚本来扩展代码块和增强操作命令。这是极�
   with_defaults :scope => 'text.html text' do |bundle|  
 
 
-###HTML标签代码块
+###HTML标签代码块 
 
 ####如下是一个示例代码块，可以复制后再添加新代码块
 
