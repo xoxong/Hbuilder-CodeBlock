@@ -163,7 +163,7 @@ children:
     prefix_values: [$scrolltop, $top, 跳转顶部]
   description: null
   displayName: $.scrolltop 动画跳转到顶部
-  expansion: \$(\"${1:body,html}\").animate({scrollTop:\$("$0").offset().top},500)
+  expansion: \$("${1:body,html}").animate({scrollTop:\$("$0").offset().top},500)
   iconPath: null
   id: null
   input: [none]

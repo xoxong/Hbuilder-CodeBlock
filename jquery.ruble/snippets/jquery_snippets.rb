@@ -99,7 +99,7 @@ end
   #动画跳转到顶部
   snippet '$.scrolltop 动画跳转到顶部' do |s|
   s.trigger = '$scrolltop','$top','跳转顶部'
-  s.expansion = '\$(\"${1:body,html}\").animate({scrollTop:\$("$0").offset().top},500)'
+  s.expansion = '\$("${1:body,html}").animate({scrollTop:\$("$0").offset().top},500)'
 end
   
 
