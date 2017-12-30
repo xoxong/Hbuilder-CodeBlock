@@ -79,7 +79,7 @@ children:
   customProperties:
     prefix_values: [notes-modular-name, nmn]
   description: null
-  displayName: 'notes_modu_name #注释：模块注释 类型 功能 介绍'
+  displayName: 'notes_modu_name #注释：模块注释 '
   expansion: "<!--   \n    modular name:$1   \n-->"
   iconPath: null
   id: null
@@ -174,7 +174,7 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [code_meta_iphone, cmetai]
+    prefix_values: [code_meta_iphone, cmetai, 手机头部声明]
   description: null
   displayName: 'code_meta_iphone #手机meta声明 类 '
   expansion: '<!--IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame -->
@@ -196,6 +196,30 @@ children:
     <!--忽略页面中的数字,邮箱,地址识别为电话号码-->
 
     <meta name="format-detection" content="telephone=no,email=no,adress=no">'
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: true
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\html_snippets.rb
+  runType: current_thread
+  scope: text.html text
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [code_a_window_open, cawo, a跳转]
+  description: null
+  displayName: 'code_a_windowOpen #常用a标签点击跳转 '
+  expansion: <a onclick="window.open('$1')">$0</a>
   iconPath: null
   id: null
   input: [none]

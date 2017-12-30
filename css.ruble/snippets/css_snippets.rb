@@ -40,7 +40,7 @@ with_defaults :scope => "source.css entity.name.tag.css" do   #======扩展CSS�
   
   #手机750rem
   snippet "code_iphone_rem750px 手机rem扩展自适应代码块750" do |s|
-    s.trigger = "code_iphone_rem750px",'cirem750'
+    s.trigger = "code_iphone_rem750px","cirem750","手机750"
     s.locationType="CSS_OUTRULE"
     s.expansion =
 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}
@@ -62,7 +62,7 @@ ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:42.6
   
   #手机640rem
   snippet "code_iphone_rem640px 手机rem扩展自适应代码块640" do |s|
-    s.trigger = "code_iphone_rem640px",'cirem640'
+    s.trigger = "code_iphone_rem640px","cirem640","手机640"
     s.locationType="CSS_OUTRULE"
     s.expansion =
 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:50px !important}}
@@ -81,5 +81,19 @@ ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:42.6
 @media all and (min-width: 1680px){html{font-size:262.5px !important}}@media all and (min-width: 1901px){html{font-size:297.03125px !important}}
 @media all and (min-width: 1920px){html{font-size:300px !important}}'
   end
+  
+  #头部预定义初始化样式=================
+  #头部预定义初始化样式=================
+  #头部预定义初始化样式=================
+  snippet "code_initialization 头部预定义初始化样式" do |s|
+    s.trigger = "code_initialization","cinitialization","初始化"
+    s.locationType="CSS_OUTRULE"
+    s.expansion =
+'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}
+*{margin:0;padding:0}
+a{text-decoration:none}
+ul li{list-style-type:none}'
+  end
+  
   
 end

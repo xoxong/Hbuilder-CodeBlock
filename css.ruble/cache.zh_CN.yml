@@ -54,7 +54,7 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [code_iphone_rem750px, cirem750]
+    prefix_values: [code_iphone_rem750px, cirem750, 手机750]
   description: null
   displayName: code_iphone_rem750px 手机rem扩展自适应代码块750
   expansion: 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}
@@ -120,7 +120,7 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [code_iphone_rem640px, cirem640]
+    prefix_values: [code_iphone_rem640px, cirem640, 手机640]
   description: null
   displayName: code_iphone_rem640px 手机rem扩展自适应代码块640
   expansion: 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}*{margin:0;padding:0}a{text-decoration:none}ul
@@ -167,6 +167,36 @@ children:
     and (min-width: 1901px){html{font-size:297.03125px !important}}
 
     @media all and (min-width: 1920px){html{font-size:300px !important}}'
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: CSS_OUTRULE
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\css_snippets.rb
+  runType: current_thread
+  scope: source.css entity.name.tag.css
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [code_initialization, cinitialization, 初始化]
+  description: null
+  displayName: code_initialization 头部预定义初始化样式
+  expansion: 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}
+
+    *{margin:0;padding:0}
+
+    a{text-decoration:none}
+
+    ul li{list-style-type:none}'
   iconPath: null
   id: null
   input: [none]
