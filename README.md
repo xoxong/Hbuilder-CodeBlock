@@ -209,7 +209,7 @@ We can use the extension code blocks of the Hbuilder to store common code blocks
 ### html
 
 > 注释部分
-* * *
+- - -
 snippet | trigger | readme
 -|-|-
 1.notes_form | notes_form ; nf | #注释：表单注释
@@ -233,7 +233,7 @@ snippet | trigger | readme
 -|-|-
 1.code_iphone_rem750px | code_iphone_rem750px ; cirem750 ; 手机750 | #手机rem扩展自适应代码块750
 2.code_iphone_rem640px | code_iphone_rem640px ; cirem640 ; 手机640 | #手机rem扩展自适应代码块640
-- - - 
+
 > 头部预定义初始化样式
 - - - 
 snippet | trigger | readme
