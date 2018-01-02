@@ -208,11 +208,21 @@ We can use the extension code blocks of the Hbuilder to store common code blocks
 
 ### html
 
-> 表单注释
+> 注释部分
 - - -
 snippet | trigger | readme
 -|-|-
 1.notes_form | notes_form,nf | #注释：表单注释
 2.notes_modu_name | notes-modular-name,nmn | #注释：模块注释 简化版 名字
 3.notes_modu | notes_modular,nm | #注释：模块注释 类型 功能 介绍 
+4.notes_company | notes_company,nc | #公司注释 署名 作者 时间  简介 备注  
+5.notes_company | notes_import,nimport | #javascript css 版本注释 类型 介绍  
+
+> 代码块 
+- - -
+snippet | trigger | readme
+-|-|-
+1.code_meta_iphone | code_meta_iphone,cmetai,手机头部声明 | #手机meta声明 类
+2.code_a_windowOpen | code_a_window_open,cawo,a跳转 | #常用a标签点击跳转js
+
 
