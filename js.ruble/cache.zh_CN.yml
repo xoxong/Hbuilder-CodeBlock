@@ -77,9 +77,9 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [notes_code, ncode]
+    prefix_values: [notes_code, ncode, '//codeBlockDescribe:$0']
   description: null
-  displayName: notes_code不带参代码块介绍;
+  displayName: notes_code_不带参代码块介绍;
   expansion: //codeBlockDescribe:$0
   iconPath: null
   id: null
@@ -101,7 +101,8 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [notes_code_data, ncodedata]
+    prefix_values: [notes_code_data, ncdata, "/**   \n    codeBlockDescribe:$1\n \
+        \   data:$2  \n**/"]
   description: null
   displayName: notes_code_带参代码块介绍;
   expansion: "/**   \n    codeBlockDescribe:$1\n    data:$2  \n**/"

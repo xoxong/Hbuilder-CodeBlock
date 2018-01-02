@@ -224,6 +224,7 @@ snippet | trigger | readme
 -|-|-
 1.code_meta_iphone | code_meta_iphone ; cmetai ; 手机头部声明 | #手机meta声明 类
 2.code_a_windowOpen | code_a_window_open ; cawo ; a跳转 | #常用a标签点击跳转js
+3.code_button_formsubmit | code_button_formsubmit ; formsubmit ; submit | #表单常用按钮submit
 
 ### css
  
@@ -247,7 +248,7 @@ snippet | trigger | readme
 snippet | trigger | readme
 -|-|-
 1.notes_code不带参 | notes_code ; ncode | #不带参代码块介绍
-2.notes_code_带参 | notes_code_data ; ncodedata | #带参代码块介绍
+2.notes_code_带参 | notes_code_data ; ncdata | #带参代码块介绍
 
 ### jQuery
 
@@ -255,6 +256,8 @@ snippet | trigger | readme
 - - - 
 snippet | trigger | readme
 -|-|-
-1.$.scrolltop | $scrolltop ; $top ; 跳转顶部 | #动画跳转到顶部
+1.$.scrolltop | $code_scrolltop ; $scrolltop ; 跳转顶部 | #动画跳转到顶部
+2.$.fontCarousel | $code_fontCarousel ; $fontCarousel ; 字体轮播上下滚动 | #字体轮播上下滚动
+3.$.formPost | $code_formpost ; $$formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
 
 

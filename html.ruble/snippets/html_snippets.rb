@@ -14,7 +14,7 @@ require 'ruble'
 with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块================================================================================
 #如下是一个示例代码块，可以复制后再添加新代码块
   snippet 'div_class' do |cmd|  #div_class是显示名称，代码助手提示列表显示时可见
-    cmd.trigger = 'divc'        #divc是激活字符，即按下divc后会触发该代码块
+    cmd.trigger = 'divc','dc'        #divc是激活字符，即按下divc后会触发该代码块
     cmd.expansion = "<div class=\"$1\">
 	$0
 </div>"                         #expansion是代码块的输出内容，其中$0、$1是光标的停留和切换位置。$1是第一个停留光标，$0是最后回车时停留的光标。
@@ -43,8 +43,8 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
       cmd.needApplyReContentAssist = true
   end
   #模块注释 简化版 名字
-  snippet 'notes_modu_name #注释：模块注释 ' do |cmd|
-      cmd.trigger='notes-modular-name','nmn'
+  snippet 'notes_modu_name #注释：模块注释 简化版 名字 ' do |cmd|
+      cmd.trigger='notes_modular_name','nmn'
       cmd.expansion="<!--   
     modular name:$1   
 -->"
@@ -75,7 +75,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   end
   
   #javascript css 版本注释--------------------------------
-  snippet 'notes_company #版本注释 类型 介绍  ' do |cmd|
+  snippet 'notes_company2 #版本注释 类型 介绍  ' do |cmd|
       cmd.trigger='notes_import','nimport'
       cmd.expansion="<!--   type:$1  describe:$0   -->"
       cmd.needApplyReContentAssist = true
@@ -106,6 +106,16 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   snippet 'code_a_windowOpen #常用a标签点击跳转 ' do |cmd|
       cmd.trigger='code_a_window_open','cawo','a跳转'
       cmd.expansion='<a onclick="window.open(\'$1\')">$0</a>'
+      cmd.needApplyReContentAssist = true
+  end
+  
+  snippet 'code_button_formsubmit #表单常用按钮submit' do |cmd|
+      cmd.trigger='code_button_formsubmit','formsubmit','submit'
+      cmd.expansion='<!--   
+    modular name:表单提交按钮   
+-->
+<button class="form_submit" onclick="FunFormSubmit()"></button>
+<input type="button" name="submit" id="submit" value="提交" class="form_submit"/>'
       cmd.needApplyReContentAssist = true
   end
   
