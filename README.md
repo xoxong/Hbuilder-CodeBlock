@@ -260,4 +260,16 @@ snippet | trigger | readme
 2.$.fontCarousel | $code_fontCarousel ; $fontCarousel ; 字体轮播上下滚动 | #字体轮播上下滚动
 3.$.formPost | $code_formpost ; $formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
 
+> 正则表达式 常用下拉
+- - - 
+snippet | trigger | readme
+-|-|-
+1.$.RegExp_s | $regexp ; $re ; 正则表达式 | /^0?1[3|4|5|8|7][0-9]\d{8}$/ 公司常用手机验证
+
+code | readme
+-|-|-
+1. /^0?1[3|4|5|8|7][0-9]\d{8}$/ | 公司常用手机验证
+2. /^1[3|4|5|8|7][0-9]\d{8}$/ | 手机验证
+
+
 
