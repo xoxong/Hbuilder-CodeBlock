@@ -202,3 +202,11 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块
 
 Most code snippets are likely to be used, and we should be independent
 We can use the extension code blocks of the Hbuilder to store common code blocks
+
+
+# 方法指令大全
+
+### html
+
+> 表单注释
+ + snippet 'notes_form #注释：表单注释'	trigger='notes_form','nf'
