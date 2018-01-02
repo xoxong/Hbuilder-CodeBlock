@@ -264,7 +264,7 @@ snippet | trigger | readme
 - - - 
 snippet | trigger | readme
 -|-|-
-1.$.RegExp_s | $regexp ; $re ; 正则表达式 | /^0?1[3|4|5|8|7][0-9]\d{8}$/ 公司常用手机验证
+1.$.RegExp_s | $regexp ; $re ; 正则表达式 | 常用正则表达式集锦
 
 code | readme
 -|-
