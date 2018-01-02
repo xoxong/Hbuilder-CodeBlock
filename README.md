@@ -207,7 +207,7 @@ We can use the extension code blocks of the Hbuilder to store common code blocks
 # 方法指令大全
 
 ### html
-
+- - -
 > 注释部分
 - - -
 snippet | trigger | readme
@@ -217,12 +217,44 @@ snippet | trigger | readme
 3.notes_modu | notes_modular,nm | #注释：模块注释 类型 功能 介绍 
 4.notes_company | notes_company,nc | #公司注释 署名 作者 时间  简介 备注  
 5.notes_company | notes_import,nimport | #javascript css 版本注释 类型 介绍  
-
+- - - 
 > 代码块 
 - - -
 snippet | trigger | readme
 -|-|-
 1.code_meta_iphone | code_meta_iphone,cmetai,手机头部声明 | #手机meta声明 类
 2.code_a_windowOpen | code_a_window_open,cawo,a跳转 | #常用a标签点击跳转js
+
+### css
+- - - 
+> 手机rem扩展自适应代码块
+- - - 
+snippet | trigger | readme
+-|-|-
+1.code_iphone_rem750px | code_iphone_rem750px,cirem750,手机750 | #手机rem扩展自适应代码块750
+2.code_iphone_rem640px | code_iphone_rem640px,cirem640,手机640 | #手机rem扩展自适应代码块640
+- - - 
+> 头部预定义初始化样式
+- - - 
+snippet | trigger | readme
+-|-|-
+1.code_initialization | code_initialization,cinitialization,初始化 | #头部预定义初始化样式
+
+### javascript
+- - - 
+> 注释部分
+- - - 
+snippet | trigger | readme
+-|-|-
+1.notes_code不带参 | notes_code,ncode | #不带参代码块介绍
+2.notes_code_带参 | notes_code_data,ncodedata | #带参代码块介绍
+
+### jQuery
+- - - 
+> 常用代码模板
+- - - 
+snippet | trigger | readme
+-|-|-
+1.$.scrolltop | $scrolltop,$top,跳转顶部 | #动画跳转到顶部
 
 
