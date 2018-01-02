@@ -258,6 +258,6 @@ snippet | trigger | readme
 -|-|-
 1.$.scrolltop | $code_scrolltop ; $scrolltop ; 跳转顶部 | #动画跳转到顶部
 2.$.fontCarousel | $code_fontCarousel ; $fontCarousel ; 字体轮播上下滚动 | #字体轮播上下滚动
-3.$.formPost | $code_formpost ; $$formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
+3.$.formPost | $code_formpost ; $formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
 
 
