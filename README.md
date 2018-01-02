@@ -209,5 +209,4 @@ We can use the extension code blocks of the Hbuilder to store common code blocks
 ### html
 
 > 表单注释
- + snippet 'notes_form #注释：表单注释'
-   + trigger='notes_form','nf'
+ + snippet 'notes_form #注释：表单注释'   + trigger='notes_form','nf'
