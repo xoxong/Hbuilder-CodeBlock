@@ -212,6 +212,11 @@ We can use the extension code blocks of the Hbuilder to store common code blocks
 
 snippet | trigger | readme
 ----|------|----
-1. notes_form  | notes_form,nf	|	#注释：表单注释
-2. notes_modu_name  | notes-modular-name,nmn  |  #注释：模块注释 简化版 名字
-3. notes_modu   | notes_modular,nm  |  #注释：模块注释 类型 功能 介绍 
+1. notes_form | notes_form,nf  | #注释：表单注释
+2. notes_modu_name | notes-modular-name,nmn  | #注释：模块注释 简化版 名字
+3. notes_modu | notes_modular,nm  | #注释：模块注释 类型 功能 介绍 
+
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
