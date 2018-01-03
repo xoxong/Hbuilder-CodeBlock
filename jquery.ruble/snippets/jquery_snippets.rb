@@ -115,9 +115,9 @@ function FunFontCarousel() {
     }, function() {
         \$("$3 :eq()").appendTo(\$("$4"))
 
-        \$(("$5").css({
+        \$("$5").css({
             "margin-top": "$6px"
-        }))
+        })
     })
 }'
 end

@@ -190,8 +190,8 @@ children:
   expansion: "setInterval(FunFontCarousel, 1000)\nfunction FunFontCarousel() {\n \
     \   //codeBlockDescribe:添加动画效果\n    //codeBlockDescribe:动态移动\n    //类名为ul\n  \
     \  \\$(\"$1\").animate({\n        \"margin-top\": \"-$2px\"\n    }, function()\
-    \ {\n        \\$(\"$3 :eq()\").appendTo(\\$(\"$4\"))\n\n        \\$((\"$5\").css({\n\
-    \            \"margin-top\": \"$6px\"\n        }))\n    })\n}"
+    \ {\n        \\$(\"$3 :eq()\").appendTo(\\$(\"$4\"))\n\n        \\$(\"$5\").css({\n\
+    \            \"margin-top\": \"$6px\"\n        })\n    })\n}"
   iconPath: null
   id: null
   input: [none]
