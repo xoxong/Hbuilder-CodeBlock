@@ -45,9 +45,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #模块注释 简化版 名字
   snippet 'notes_modu_name #注释：模块注释 简化版 名字 ' do |cmd|
       cmd.trigger='notes_modular_name','nmn'
-      cmd.expansion="<!--   
-    modular name:$1   
--->"
+      cmd.expansion="<!-- modular name:$1 -->"
       cmd.needApplyReContentAssist = true
   end
    #模块注释 模块类型 模块介绍
@@ -111,9 +109,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   
   snippet 'code_button_formsubmit #表单常用按钮submit' do |cmd|
       cmd.trigger='code_button_formsubmit','formsubmit','submit'
-      cmd.expansion='<!--   
-    modular name:表单提交按钮   
--->
+      cmd.expansion='<!-- modular name:表单提交按钮 -->
 <button class="form_submit" onclick="FunFormSubmit()"></button>
 <input type="button" name="submit" id="submit" value="提交" class="form_submit"/>'
       cmd.needApplyReContentAssist = true

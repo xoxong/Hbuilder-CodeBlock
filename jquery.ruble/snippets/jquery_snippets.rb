@@ -37,7 +37,7 @@ snippet '$.map' do |s|
 end
 
 snippet t(:plugin_animation) do |s|
-  s.trigger = 'plugin'
+  s.trigger = '$.plugin'
   s.expansion = 'jQuery.fn.${1:myeffect} = function(speed, easing, callback) {
 	return this.animate({${2:param1}: ${3:\'value\'}}, speed, easing, callback);
 };'
@@ -109,14 +109,15 @@ end
 function FunFontCarousel() {
     //codeBlockDescribe:添加动画效果
     //codeBlockDescribe:动态移动
+    //类名为ul
     \$("$1").animate({
         "margin-top": "-$2px"
     }, function() {
-        \$("$3 ep:()").appendTo(\$("$4"))
+        \$("$3 :eq()").appendTo(\$("$4"))
 
         \$(("$5").css({
             "margin-top": "$6px"
-        })
+        }))
     })
 }'
 end
@@ -155,6 +156,12 @@ function FunFormSubmit(){
        }
     })
 }'
+end
+
+  #正则表达式 常用下拉
+  snippet '$.RegExp_s 正则表达式 常用下拉' do |s|
+  s.trigger = '$regexp','$re','正则表达式'
+  s.expansion = 'var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};'
 end
 
 

@@ -95,5 +95,27 @@ a{text-decoration:none}
 ul li{list-style-type:none}'
   end
   
+  #模块代码注释=================
+  #模块代码注释=================
+  #模块代码注释=================
+  
+  #模块注释 简化版 名字
+  snippet "notes_modu_name 注释：模块注释 简化版 名字 " do |s|
+      s.trigger='notes_modular_name','nmn'
+      s.locationType="CSS_OUTRULE"
+      s.expansion='/* modular name:$1 */'
+  end
+  
+  #模块注释 模块类型 模块介绍
+  snippet "notes_modu 注释：模块注释 类型 功能 介绍" do |s|
+      s.trigger='notes_modular','nm'
+      s.locationType="CSS_OUTRULE"
+      s.expansion='/*   
+    type:模块 
+    purpose: 
+    describe:   
+*/'
+  end
+  
   
 end

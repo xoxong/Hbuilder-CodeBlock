@@ -77,7 +77,7 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [plugin]
+    prefix_values: [$.plugin]
   description: null
   displayName: plugin_animation
   expansion: "jQuery.fn.${1:myeffect} = function(speed, easing, callback) {\n\treturn\
@@ -188,10 +188,10 @@ children:
   description: null
   displayName: $.fontCarousel 字体轮播上下滚动
   expansion: "setInterval(FunFontCarousel, 1000)\nfunction FunFontCarousel() {\n \
-    \   //codeBlockDescribe:添加动画效果\n    //codeBlockDescribe:动态移动\n    \\$(\"$1\").animate({\n\
-    \        \"margin-top\": \"-$2px\"\n    }, function() {\n        \\$(\"$3 ep:()\"\
-    ).appendTo(\\$(\"$4\"))\n\n        \\$((\"$5\").css({\n            \"margin-top\"\
-    : \"$6px\"\n        })\n    })\n}"
+    \   //codeBlockDescribe:添加动画效果\n    //codeBlockDescribe:动态移动\n    //类名为ul\n  \
+    \  \\$(\"$1\").animate({\n        \"margin-top\": \"-$2px\"\n    }, function()\
+    \ {\n        \\$(\"$3 :eq()\").appendTo(\\$(\"$4\"))\n\n        \\$((\"$5\").css({\n\
+    \            \"margin-top\": \"$6px\"\n        }))\n    })\n}"
   iconPath: null
   id: null
   input: [none]
@@ -226,6 +226,30 @@ children:
     能为空\");\n       return false;\n    }\n    \\$.post(\"$1\",{name:name,$2},function\
     \ (result) {\n       if(result.code == 200){\n          \n       }else{\n    \
     \       \n       }\n    })\n}"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$regexp, $re, 正则表达式]
+  description: null
+  displayName: $.RegExp_s 正则表达式 常用下拉
+  expansion: var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};
   iconPath: null
   id: null
   input: [none]

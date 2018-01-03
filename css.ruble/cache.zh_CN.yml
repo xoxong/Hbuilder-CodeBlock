@@ -213,6 +213,54 @@ children:
   tags: *id001
   version: null
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [notes_modular_name, nmn]
+  description: null
+  displayName: 'notes_modu_name 注释：模块注释 简化版 名字 '
+  expansion: /* modular name:$1 */
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: CSS_OUTRULE
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\css_snippets.rb
+  runType: current_thread
+  scope: source.css entity.name.tag.css
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [notes_modular, nm]
+  description: null
+  displayName: notes_modu 注释：模块注释 类型 功能 介绍
+  expansion: "/*   \n    type:模块 \n    purpose: \n    describe:   \n*/"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: CSS_OUTRULE
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\css_snippets.rb
+  runType: current_thread
+  scope: source.css entity.name.tag.css
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
 copyright: ''
 customProperties: null
 decreaseIndentMarkers: {}
