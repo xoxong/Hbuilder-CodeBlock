@@ -95,7 +95,14 @@ end
   #代码块 jQuery 常用代码模板--------------------------------------------------------------------------------------------------------------------------------
   #代码块 jQuery 常用代码模板-------------------------------------------------------------------------------------------------------------------------------
   #代码块 jQuery 常用代码模板--------------------------------------------------------------------------------------------------------------------------------
-  
+    
+    
+  #正则表达式 常用下拉
+  snippet '$.RegExp_s 正则表达式 常用下拉' do |s|
+  s.trigger = '$regexp','$re','正则表达式'
+  s.expansion = 'var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};'
+end
+
   #动画跳转到顶部
   snippet '$.scrollTop 动画跳转到顶部' do |s|
   s.trigger = '$code_scrolltop','$scrolltop','跳转顶部'
@@ -158,11 +165,50 @@ function FunFormSubmit(){
 }'
 end
 
-  #正则表达式 常用下拉
-  snippet '$.RegExp_s 正则表达式 常用下拉' do |s|
-  s.trigger = '$regexp','$re','正则表达式'
-  s.expansion = 'var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};'
+  #定时计算时间差然后改变数字
+  snippet '$.timedifference 时间差改变数据' do |s|
+  s.trigger = '$timedifference','时间差'
+  s.expansion = 'function m5_theNumberOf() {
+    //codeBlockDescribe:每日增加的个数
+    var day_addnum=50; 
+    var m5_newdate= new Date();
+    var m5_Hours=m5_newdate.getHours(); //当前小时
+    var m5_newday = m5_newdate.getDate(); //当前天
+    var m5_newMonth = m5_newdate.getMonth()+1; //当前月
+    var m5_time_start = m5_newdate.getTime();
+    //设定目标时间，然后计算当前时间到起始时间之间的时间差
+    var m5_time_end = new Date("2018/1/13 10:00:00").getTime(); 
+    // 计算时间差 
+    var m5_time_distance = m5_time_start-m5_time_end;
+    // 天
+    var int_day = Math.floor(m5_time_distance / 86400000)
+    m5_time_distance -= int_day * 86400000;
+    // 时
+    var int_hour = Math.floor(m5_time_distance / 3600000)
+    m5_time_distance -= int_hour * 3600000;
+    // 分
+    var int_minute = Math.floor(m5_time_distance / 60000)
+    m5_time_distance -= int_minute * 60000;
+    // 秒 
+    var int_second = Math.floor(m5_time_distance / 1000)
+    //只在10点到22点之间增加值
+    if(m5_Hours>=10&&m5_Hours<=22){
+        //计算每天没小时每分钟没秒增加数目
+        var numa=Math.floor(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));
+        console.log(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));
+        \$("$1").text(numa);
+    }
+    else if(m5_Hours<10){
+        \$("$1").text(Number(int_day)*day_addnum);
+    }
+    else if(m5_Hours>22){
+        \$("$1").text(Number(int_day+1)*day_addnum);
+    }
+}
+setInterval(m5_theNumberOf,1000);'
 end
+
+
 
 
   

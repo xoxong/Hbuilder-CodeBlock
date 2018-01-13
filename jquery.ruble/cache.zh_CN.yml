@@ -160,6 +160,30 @@ children:
   async: false
   category: null
   customProperties:
+    prefix_values: [$regexp, $re, 正则表达式]
+  description: null
+  displayName: $.RegExp_s 正则表达式 常用下拉
+  expansion: var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
     prefix_values: [$code_scrolltop, $scrolltop, 跳转顶部]
   description: null
   displayName: $.scrollTop 动画跳转到顶部
@@ -246,10 +270,26 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [$regexp, $re, 正则表达式]
+    prefix_values: [$timedifference, 时间差]
   description: null
-  displayName: $.RegExp_s 正则表达式 常用下拉
-  expansion: var telMeg =${1:公司常用手机验证\/^0?1[3|4|5|8|7][0-9]\d{8\}\$\//手机验证\/^1[3|4|5|8|7][0-9]\d{8\}\$\/};
+  displayName: $.timedifference 时间差改变数据
+  expansion: "function m5_theNumberOf() {\n    //codeBlockDescribe:每日增加的个数\n    var\
+    \ day_addnum=50; \n    var m5_newdate= new Date();\n    var m5_Hours=m5_newdate.getHours();\
+    \ //当前小时\n    var m5_newday = m5_newdate.getDate(); //当前天\n    var m5_newMonth\
+    \ = m5_newdate.getMonth()+1; //当前月\n    var m5_time_start = m5_newdate.getTime();\n\
+    \    //设定目标时间，然后计算当前时间到起始时间之间的时间差\n    var m5_time_end = new Date(\"2018/1/13\
+    \ 10:00:00\").getTime(); \n    // 计算时间差 \n    var m5_time_distance = m5_time_start-m5_time_end;\n\
+    \    // 天\n    var int_day = Math.floor(m5_time_distance / 86400000)\n    m5_time_distance\
+    \ -= int_day * 86400000;\n    // 时\n    var int_hour = Math.floor(m5_time_distance\
+    \ / 3600000)\n    m5_time_distance -= int_hour * 3600000;\n    // 分\n    var int_minute\
+    \ = Math.floor(m5_time_distance / 60000)\n    m5_time_distance -= int_minute *\
+    \ 60000;\n    // 秒 \n    var int_second = Math.floor(m5_time_distance / 1000)\n\
+    \    //只在10点到22点之间增加值\n    if(m5_Hours>=10&&m5_Hours<=22){\n        //计算每天没小时每\
+    分钟没秒增加数目\n        var numa=Math.floor(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));\n\
+    \        console.log(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));\n\
+    \        \\$(\"$1\").text(numa);\n    }\n    else if(m5_Hours<10){\n        \\\
+    $(\"$1\").text(Number(int_day)*day_addnum);\n    }\n    else if(m5_Hours>22){\n\
+    \        \\$(\"$1\").text(Number(int_day+1)*day_addnum);\n    }\n}\nsetInterval(m5_theNumberOf,1000);"
   iconPath: null
   id: null
   input: [none]

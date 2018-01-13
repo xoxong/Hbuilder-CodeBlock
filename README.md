@@ -259,6 +259,7 @@ snippet | trigger | readme
 1.$.scrolltop | $code_scrolltop ; $scrolltop ; 跳转顶部 | #动画跳转到顶部
 2.$.fontCarousel | $code_fontCarousel ; $fontCarousel ; 字体轮播上下滚动 | #字体轮播上下滚动
 3.$.formPost | $code_formpost ; $formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
+4.$.timedifference | $timedifference ; 时间差 ; null | #定时计算时间差然后改变数字
 
 > 正则表达式 常用下拉
 - - - 
