@@ -122,6 +122,39 @@ children:
   tags: *id001
   version: null
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$code_mousemovement, $cmm, 跟随鼠标移动]
+  description: null
+  displayName: MouseMovement 跟随鼠标移动;
+  expansion: "//跟随鼠标移动\n//codeBlockDescribe:MommBox==Mouse movement box\nvar MommBox=document.getElementById(\"\
+    MommBox\")\ndocument.getElementById(\"MommBox\").onmousedown=function(ev){\n \
+    \   //codeBlockDescribe:兼容各个浏览器///IE等浏览器则可以直接使用event或者window.event得到事件本身\n　　　　\
+    var oevent = ev || event;\n　　　　var distanceX = oevent.clientX - MommBox.offsetLeft;\n\
+    　　　　var distanceY = oevent.clientY - MommBox.offsetTop;\n    //codeBlockDescribe:事\
+    件会在鼠标指针移动时发生\n     document.onmousemove = function(ev){\n　　　　　　var oevent = ev\
+    \ || event;\n　　　　　　MommBox.style.left = oevent.clientX - distanceX + \"px\";\n\
+    　　　　　　MommBox.style.top = oevent.clientY - distanceY + \"px\"; \n　　　　};\n    //codeBlockDescribe:事\
+    件会在鼠标按键被松开时发生。\n　　　　document.onmouseup = function(){\n　　　　　　document.onmousemove\
+    \ = null;\n　　　　　　document.onmouseup = null;\n　　　　};\n}"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\js_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
 copyright: ''
 customProperties: null
 decreaseIndentMarkers: {}

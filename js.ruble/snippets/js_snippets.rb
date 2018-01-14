@@ -47,6 +47,31 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块============
     codeBlockDescribe:$1
     data:$2  
 **/"
+   end
+
+   #跟随鼠标移动
+  snippet "MouseMovement 跟随鼠标移动;" do |s|
+  s.trigger = "$code_mousemovement",'$cmm',"跟随鼠标移动"
+  s.expansion = '//跟随鼠标移动
+//codeBlockDescribe:MommBox==Mouse movement box
+var MommBox=document.getElementById("MommBox")
+document.getElementById("MommBox").onmousedown=function(ev){
+    //codeBlockDescribe:兼容各个浏览器///IE等浏览器则可以直接使用event或者window.event得到事件本身
+　　　　var oevent = ev || event;
+　　　　var distanceX = oevent.clientX - MommBox.offsetLeft;
+　　　　var distanceY = oevent.clientY - MommBox.offsetTop;
+    //codeBlockDescribe:事件会在鼠标指针移动时发生
+     document.onmousemove = function(ev){
+　　　　　　var oevent = ev || event;
+　　　　　　MommBox.style.left = oevent.clientX - distanceX + "px";
+　　　　　　MommBox.style.top = oevent.clientY - distanceY + "px"; 
+　　　　};
+    //codeBlockDescribe:事件会在鼠标按键被松开时发生。
+　　　　document.onmouseup = function(){
+　　　　　　document.onmousemove = null;
+　　　　　　document.onmouseup = null;
+　　　　};
+}'
   end
   
   
