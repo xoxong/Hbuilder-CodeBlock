@@ -249,6 +249,7 @@ snippet | trigger | readme
 -|-|-
 1.notes_code不带参 | notes_code ; ncode | #不带参代码块介绍
 2.notes_code_带参 | notes_code_data ; ncdata | #带参代码块介绍
+3.MouseMovement | $code_mousemovement ; $cmm | #带参代码块介绍
 
 ### jQuery
 
@@ -259,7 +260,7 @@ snippet | trigger | readme
 1.$.scrolltop | $code_scrolltop ; $scrolltop ; 跳转顶部 | #动画跳转到顶部
 2.$.fontCarousel | $code_fontCarousel ; $fontCarousel ; 字体轮播上下滚动 | #字体轮播上下滚动
 3.$.formPost | $code_formpost ; $formpost ; 表单提交 | #表单提交默认模板 获取 判断 提交 返回
-4.$.timedifference | $timedifference ; 时间差 ; null | #定时计算时间差然后改变数字
+4.$.timedifference | $timedifference ; 时间差 | #div跟随鼠标移动
 
 > 正则表达式 常用下拉
 - - - 
