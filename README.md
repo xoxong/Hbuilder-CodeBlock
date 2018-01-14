@@ -249,7 +249,7 @@ snippet | trigger | readme
 -|-|-
 1.notes_code不带参 | notes_code ; ncode | #不带参代码块介绍
 2.notes_code_带参 | notes_code_data ; ncdata | #带参代码块介绍
-3.MouseMovement | $code_mousemovement ; $cmm | #带参代码块介绍
+3.MouseMovement | $code_mousemovement ; $cmm ; 跟随鼠标移动 | #带参代码块介绍
 
 ### jQuery
 
