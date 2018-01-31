@@ -38,12 +38,12 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块============
   #代码块介绍 不带参数
   snippet "notes_code_不带参代码块介绍;" do |s|
   s.trigger = "notes_code",'ncode',
-  s.expansion = "//codeBlockDescribe:$0"
+  s.expansion = "//xb:codeBlockDescribe:$0"
   end
   #代码块介绍 带参数
   snippet "notes_code_带参代码块介绍;" do |s|
   s.trigger = "notes_code_data",'ncdata',
-  s.expansion = "/**   
+  s.expansion = "/**xb:   
     codeBlockDescribe:$1
     data:$2  
 **/"
@@ -52,7 +52,7 @@ with_defaults :scope => "source.js" do #=====扩展定义JS代码块============
    #跟随鼠标移动
   snippet "MouseMovement 跟随鼠标移动;" do |s|
   s.trigger = "$code_mousemovement",'$cmm',"跟随鼠标移动"
-  s.expansion = '//跟随鼠标移动
+  s.expansion = '//xb:跟随鼠标移动
 //codeBlockDescribe:MommBox==Mouse movement box
 var MommBox=document.getElementById("MommBox")
 document.getElementById("MommBox").onmousedown=function(ev){

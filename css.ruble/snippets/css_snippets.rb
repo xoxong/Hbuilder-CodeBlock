@@ -20,6 +20,16 @@ with_defaults :scope => "source.css support.type.property-name.css" do    #=====
                                         #输出双引号在前面加\来转义，输出$使用\$(单引号中)或\\$(双引号中)转义
     s.needApplyReContentAssist = true   #这句话的意思是输出后同时激活代码助手，即在$1的位置直接拉出图片列表                                                                         
   end
+  #自定义css属性=================
+  #自定义css属性=================
+  #自定义css属性=================
+  
+  #IE兼容css属性=================
+  snippet "-IE-filter-自定义IE透明度兼容css" do |s|   
+    s.trigger = "iefilter",'filter'         
+    s.expansion ='filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000,endColorstr=#9F000000);'         
+    s.needApplyReContentAssist = true     
+  end
   
 end
 
@@ -103,14 +113,14 @@ ul li{list-style-type:none}'
   snippet "notes_modu_name 注释：模块注释 简化版 名字 " do |s|
       s.trigger='notes_modular_name','nmn'
       s.locationType="CSS_OUTRULE"
-      s.expansion='/* modular name:$1 */'
+      s.expansion='/*xb: modular name:$1 */'
   end
   
   #模块注释 模块类型 模块介绍
   snippet "notes_modu 注释：模块注释 类型 功能 介绍" do |s|
       s.trigger='notes_modular','nm'
       s.locationType="CSS_OUTRULE"
-      s.expansion='/*   
+      s.expansion='/*xb:   
     type:模块 
     purpose: 
     describe:   

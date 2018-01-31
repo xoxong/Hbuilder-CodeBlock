@@ -227,6 +227,12 @@ snippet | trigger | readme
 3.code_button_formsubmit | code_button_formsubmit ; formsubmit ; submit | #表单常用按钮submit
 
 ### css
+
+> 自定义css属性
+- - - 
+snippet | trigger | readme
+-|-|-
+1.-IE-filter- | iefilter ; filter | #IE透明度兼容css
  
 > 手机rem扩展自适应代码块
 - - - 

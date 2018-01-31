@@ -36,7 +36,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #表单注释
   snippet 'notes_form #注释：表单注释' do |cmd|
       cmd.trigger='notes_form','nf'
-      cmd.expansion="<!--   
+      cmd.expansion="<!--xb:   
     type:表单 form$1   
     describe:$0   
 -->"
@@ -45,13 +45,13 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #模块注释 简化版 名字
   snippet 'notes_modu_name #注释：模块注释 简化版 名字 ' do |cmd|
       cmd.trigger='notes_modular_name','nmn'
-      cmd.expansion="<!-- modular name:$1 -->"
+      cmd.expansion="<!--xb: modular name:$1 -->"
       cmd.needApplyReContentAssist = true
   end
    #模块注释 模块类型 模块介绍
   snippet 'notes_modu #注释：模块注释 类型 功能 介绍' do |cmd|
       cmd.trigger='notes_modular','nm'
-      cmd.expansion="<!--   
+      cmd.expansion="<!--xb:   
     type:模块 $1
     purpose:$2 
     describe:$0   
@@ -63,7 +63,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #公司署名注释第一版--------------------------------
   snippet 'notes_company #公司注释 署名 作者 时间  简介 备注  ' do |cmd|
       cmd.trigger='notes_company','nc'
-      cmd.expansion="<!--   
+      cmd.expansion="<!--xb:   
     company name:$1
     author      :$2
     time        :$3 
@@ -75,7 +75,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #javascript css 版本注释--------------------------------
   snippet 'notes_company2 #版本注释 类型 介绍  ' do |cmd|
       cmd.trigger='notes_import','nimport'
-      cmd.expansion="<!--   type:$1  describe:$0   -->"
+      cmd.expansion="<!--xb:   type:$1  describe:$0   -->"
       cmd.needApplyReContentAssist = true
   end
    #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ with_defaults :scope => 'text.html text' do |bundle|  #=====HTML标签代码块=
   #代码块 手机端头部声明--------------------------------------------------------------------------------------------------------------------------------
   snippet 'code_meta_iphone #手机meta声明 类 ' do |cmd|
       cmd.trigger='code_meta_iphone','cmetai','手机头部声明'
-      cmd.expansion='<!--IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame -->
+      cmd.expansion='<!--xb:IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <!--在iPhone的浏览器中页面将以原始大小显示，并不允许缩放。  -->
 <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">

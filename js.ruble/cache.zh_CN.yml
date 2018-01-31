@@ -77,10 +77,10 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [notes_code, ncode, '//codeBlockDescribe:$0']
+    prefix_values: [notes_code, ncode, '//xb:codeBlockDescribe:$0']
   description: null
   displayName: notes_code_不带参代码块介绍;
-  expansion: //codeBlockDescribe:$0
+  expansion: //xb:codeBlockDescribe:$0
   iconPath: null
   id: null
   input: [none]
@@ -101,11 +101,11 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [notes_code_data, ncdata, "/**   \n    codeBlockDescribe:$1\n \
-        \   data:$2  \n**/"]
+    prefix_values: [notes_code_data, ncdata, "/**xb:   \n    codeBlockDescribe:$1\n\
+        \    data:$2  \n**/"]
   description: null
   displayName: notes_code_带参代码块介绍;
-  expansion: "/**   \n    codeBlockDescribe:$1\n    data:$2  \n**/"
+  expansion: "/**xb:   \n    codeBlockDescribe:$1\n    data:$2  \n**/"
   iconPath: null
   id: null
   input: [none]
@@ -129,7 +129,7 @@ children:
     prefix_values: [$code_mousemovement, $cmm, 跟随鼠标移动]
   description: null
   displayName: MouseMovement 跟随鼠标移动;
-  expansion: "//跟随鼠标移动\n//codeBlockDescribe:MommBox==Mouse movement box\nvar MommBox=document.getElementById(\"\
+  expansion: "//xb:跟随鼠标移动\n//codeBlockDescribe:MommBox==Mouse movement box\nvar MommBox=document.getElementById(\"\
     MommBox\")\ndocument.getElementById(\"MommBox\").onmousedown=function(ev){\n \
     \   //codeBlockDescribe:兼容各个浏览器///IE等浏览器则可以直接使用event或者window.event得到事件本身\n　　　　\
     var oevent = ev || event;\n　　　　var distanceX = oevent.clientX - MommBox.offsetLeft;\n\
