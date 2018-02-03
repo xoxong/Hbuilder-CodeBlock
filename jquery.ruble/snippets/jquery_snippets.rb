@@ -170,7 +170,11 @@ end
   s.trigger = '$timedifference','时间差'
   s.expansion = 'function m5_theNumberOf() {
     //codeBlockDescribe:每日增加的个数
-    var day_addnum=50; 
+    var day_addnum=50;
+    //codeBlockDescribe:时间差，比如每天只有13个小时计算
+    var day_timeDif=13;
+    //codeBlockDescribe:基数，最少的基数
+    var BeginNum=0;
     var m5_newdate= new Date();
     var m5_Hours=m5_newdate.getHours(); //当前小时
     var m5_newday = m5_newdate.getDate(); //当前天
@@ -194,15 +198,15 @@ end
     //只在10点到22点之间增加值
     if(m5_Hours>=10&&m5_Hours<=22){
         //计算每天没小时每分钟没秒增加数目
-        var numa=Math.floor(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));
-        console.log(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/13))+Number(int_minute*(day_addnum/13/60))+Number(int_second*(day_addnum/13/60/60)));
-        \$("$1").text(numa);
+        var numa=Math.floor(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/day_timeDif))+Number(int_minute*(day_addnum/day_timeDif/60))+Number(int_second*(day_addnum/day_timeDif/60/60)));
+        console.log(Number(int_day*day_addnum)+Number(int_hour*(day_addnum/day_timeDif))+Number(int_minute*(day_addnum/day_timeDif/60))+Number(int_second*(day_addnum/day_timeDif/60/60)));
+        \$("$1").text(numa+BeginNum);
     }
     else if(m5_Hours<10){
-        \$("$1").text(Number(int_day)*day_addnum);
+        \$("$1").text(Number(int_day)*day_addnum+BeginNum);
     }
     else if(m5_Hours>22){
-        \$("$1").text(Number(int_day+1)*day_addnum);
+        \$("$1").text(Number(int_day+1)*day_addnum+BeginNum);
     }
 }
 setInterval(m5_theNumberOf,1000);'
