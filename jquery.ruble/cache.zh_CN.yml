@@ -309,6 +309,40 @@ children:
   tags: *id001
   version: null
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [$code_info, $info, 字体轮播上下滚动]
+  description: null
+  displayName: $.dynamicInfo 动态添加客户信息
+  expansion: "XBFunDynamicInfor();\n    function XBFunDynamicInfor(){\n        //姓\
+    氏变量\n        var xb_surName='李王张刘陈杨赵黄周吴徐孙胡朱高林何郭马罗梁宋郑谢韩唐冯于董萧程曹袁邓许傅沈曾彭吕苏卢蒋蔡贾丁魏薛叶\
+    阎余潘杜戴夏钟汪田任姜范方石姚谭廖邹熊金陆郝孔白崔康毛邱秦江史顾侯邵孟龙万段漕钱汤尹黎易常武乔贺赖龚文';\n        //尊称\n        var\
+    \ xb_nickName=['先生','女士'];\n        //手机号码\n        var iphoneNum='34578'\n  \
+    \      //随机数 Math.floor(Math.random()*10+1)\n        function xbsuiji(num1,num2){return\
+    \ Math.floor(Math.random()*num1+num2);}\n        //以下部分为添加html内容\n        var\
+    \ xbi=0\n        while (xbi<30){\n         \\$('$1').append(\"<li><img src='modular_gai/m_xb_img_30.png''alt=''\
+    \ /><span>\"+xb_surName[xbsuiji(100,0)]+\"\"+xb_nickName[xbsuiji(2,0)]+\"成功报价\
+    </span><span>1\"+iphoneNum[xbsuiji(5,0)]+\"\"+xbsuiji(10,0)+\"*****\"+xbsuiji(899,100)+\"\
+    </span><span>面积\"+xbsuiji(110,80)+\"</span></li>\");\n         xbi++;\n      \
+    \    }\n    }"
+  iconPath: null
+  id: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  locationType: null
+  menuId: null
+  needApplyReContentAssist: false
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\jquery_snippets.rb
+  runType: current_thread
+  scope: source.js
+  tags: *id001
+  version: null
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: ''}
 decreaseIndentMarkers: {}

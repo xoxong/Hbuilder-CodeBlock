@@ -212,7 +212,27 @@ end
 setInterval(m5_theNumberOf,1000);'
 end
 
-
+#动态添加客户信息
+  snippet '$.dynamicInfo 动态添加客户信息' do |s|
+  s.trigger = '$code_info','$info','字体轮播上下滚动'
+  s.expansion = "XBFunDynamicInfor();
+    function XBFunDynamicInfor(){
+        //姓氏变量
+        var xb_surName='李王张刘陈杨赵黄周吴徐孙胡朱高林何郭马罗梁宋郑谢韩唐冯于董萧程曹袁邓许傅沈曾彭吕苏卢蒋蔡贾丁魏薛叶阎余潘杜戴夏钟汪田任姜范方石姚谭廖邹熊金陆郝孔白崔康毛邱秦江史顾侯邵孟龙万段漕钱汤尹黎易常武乔贺赖龚文';
+        //尊称
+        var xb_nickName=['先生','女士'];
+        //手机号码
+        var iphoneNum='34578'
+        //随机数 Math.floor(Math.random()*10+1)
+        function xbsuiji(num1,num2){return Math.floor(Math.random()*num1+num2);}
+        //以下部分为添加html内容
+        var xbi=0
+        while (xbi<30){
+         \\$('$1').append(\"<li><img src='modular_gai/m_xb_img_30.png''alt='' /><span>\"+xb_surName[xbsuiji(100,0)]+\"\"+xb_nickName[xbsuiji(2,0)]+\"成功报价</span><span>1\"+iphoneNum[xbsuiji(5,0)]+\"\"+xbsuiji(10,0)+\"*****\"+xbsuiji(899,100)+\"</span><span>面积\"+xbsuiji(110,80)+\"</span></li>\");
+         xbi++;
+          }
+    }"
+end
 
 
   
