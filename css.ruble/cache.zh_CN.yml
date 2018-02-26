@@ -214,11 +214,21 @@ children:
     prefix_values: [code_initialization, cinitialization, 初始化]
   description: null
   displayName: code_initialization 头部预定义初始化样式
-  expansion: 'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}
+  expansion: '@font-face {font-family:;src: url();}
+
+    a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none;}
 
     *{margin:0;padding:0}
 
     a{text-decoration:none}
+
+    a:link{text-decoration:none;}
+
+    a:visited{text-decoration:none;}
+
+    a:hover{text-decoration:none;}
+
+    a:active{text-decoration:none;}
 
     ul li{list-style-type:none}'
   iconPath: null
@@ -244,7 +254,7 @@ children:
     prefix_values: [notes_modular_name, nmn]
   description: null
   displayName: 'notes_modu_name 注释：模块注释 简化版 名字 '
-  expansion: '/*xb: modular name:$1 */'
+  expansion: '/*xb: modularName:$1 */'
   iconPath: null
   id: null
   input: [none]

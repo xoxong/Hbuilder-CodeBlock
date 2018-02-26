@@ -99,9 +99,14 @@ ul li{list-style-type:none}@media all and (min-width: 320px){html{font-size:42.6
     s.trigger = "code_initialization","cinitialization","初始化"
     s.locationType="CSS_OUTRULE"
     s.expansion =
-'a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none}
+'@font-face {font-family:;src: url();}
+a,button,input,select{outline:none;-webkit-appearance:none;appearance:none;-moz-appearance:none;}
 *{margin:0;padding:0}
 a{text-decoration:none}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
 ul li{list-style-type:none}'
   end
   
@@ -113,7 +118,7 @@ ul li{list-style-type:none}'
   snippet "notes_modu_name 注释：模块注释 简化版 名字 " do |s|
       s.trigger='notes_modular_name','nmn'
       s.locationType="CSS_OUTRULE"
-      s.expansion='/*xb: modular name:$1 */'
+      s.expansion='/*xb: modularName:$1 */'
   end
   
   #模块注释 模块类型 模块介绍

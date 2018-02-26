@@ -214,7 +214,7 @@ end
 
 #动态添加客户信息
   snippet '$.dynamicInfo 动态添加客户信息' do |s|
-  s.trigger = '$code_info','$info','字体轮播上下滚动'
+  s.trigger = '$code_info','$info','添加客户信息'
   s.expansion = "XBFunDynamicInfor();
     function XBFunDynamicInfor(){
         //姓氏变量

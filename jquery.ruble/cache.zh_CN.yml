@@ -313,7 +313,7 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [$code_info, $info, 字体轮播上下滚动]
+    prefix_values: [$code_info, $info, 添加客户信息]
   description: null
   displayName: $.dynamicInfo 动态添加客户信息
   expansion: "XBFunDynamicInfor();\n    function XBFunDynamicInfor(){\n        //姓\
